@@ -4,7 +4,7 @@ import plotly.express as px
 import pathlib
 import platform
 plt = platform.system()
-if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
+if plt == 'Linux': pathlib.WindowPath = pathlib.PosixPath
 #title
 st.title('Hashoratlarni farqlovchi model')
 
