@@ -2,8 +2,9 @@ import streamlit as st
 from fastai.vision.all import *
 import plotly.express as px
 import pathlib
-from pathlib import Path
-model_path = Path('path/to/model')
+import pathlib
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 #title
 st.title('Hashoratlarni farqlovchi model')
 
